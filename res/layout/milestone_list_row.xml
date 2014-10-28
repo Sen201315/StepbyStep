@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:descendantFocusability="beforeDescendants">
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" 
+    android:paddingTop="3dp">
+
+    <!-- Priority -->
+    <CheckBox
+        android:id="@+id/Milestonecheckbox"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+   
+
+    <!-- Deadline -->
+    <TextView
+        android:id="@+id/MilestoneDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/year"
+        android:text="31st December 2014"
+        android:textSize="@dimen/goaldeadline" />
+
+		<!--  Steps Completed -->   
+		 
+	 <TextView
+        android:id="@+id/MilestoneStartdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/year"
+        android:text="3/5"
+        android:textSize="@dimen/goaldeadline" />
+
+	 <TextView
+	     android:id="@+id/Milestonetitle"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@+id/MilestoneStartdate"
+	     android:layout_marginLeft="30dp"
+	     android:layout_marginTop="22dp"
+	     android:layout_toRightOf="@+id/Milestonecheckbox"
+	     android:maxLength="16"
+	     android:text="Be president"
+	     android:textSize="@dimen/goalname"
+	     android:textStyle="bold" />
+
+</RelativeLayout>
+</FrameLayout>
